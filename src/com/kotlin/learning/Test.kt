@@ -1,7 +1,15 @@
 package com.kotlin.learning
+import com.kotlin.learning.A.format
 
 fun main() {
-    JavaMain.`in`
+
+}
+
+fun function(str: String) {
+    val fmt1 = format(str)
+    fmt1.length
+    //val fmt2: String = format(str)
+    val fmt3: String? = format(str)
 }
 
 
@@ -36,6 +44,7 @@ var name = "lulu"
 
 
 object Test {
+    @JvmStatic
     fun sayMessage(str: String) {
         println(str)
     }
